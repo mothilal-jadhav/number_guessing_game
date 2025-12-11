@@ -17,6 +17,7 @@ guess_counter = 0
 
 while guess_counter < new_allowed:
     guess_counter += 1
+    print(f"you only have {new_allowed} chances be aware")
     guess = int(input("lets take a Guess: "))
 
     if guess == number:
