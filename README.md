@@ -28,3 +28,11 @@ The game starts by allowing the user to define a range by entering a lower and u
 ## implementation 
 
 I will be using the **random** module of python
+
+## Problems
+
+If my lower bound is say 40 and upper bound is say 60 then the allowed chances would be 25 , which was not my initial thoght, this gives the player easy chances of winning.
+
+## Solution
+
+lets make the allowed chance in a single digit i.e, the allowed cahnce will be the mod by 10 of intial though like this if my allowed chance is 25 then the new_allowed will be 5. this makes the game intersting.
