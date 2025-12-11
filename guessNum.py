@@ -5,7 +5,7 @@ print("Hey Buddy! Ready to Guess a number. Better guess the number within the al
 low = int(input("enter the lower bound of the range you want to guess: "))
 high = int(input("enter the upper bound of the range you want to guess: "))
 
-middle = (low+high)//2
+middle = (high - low)//2
 
 allowed = middle//2
 
