@@ -9,27 +9,25 @@ middle = (low+high)//2
 
 allowed = middle//2
 
+new_allowed = allowed%10
+
 number = random.randint(low,high)
 
 guess_counter = 0
 
-while guess_counter < allowed:
+while guess_counter < new_allowed:
+    guess_counter += 1
     guess = int(input("lets take a Guess: "))
 
     if guess == number:
         print("Hurray! you guessd it right ")
         break
 
-    elif guess > number*2:
-        print("Oo! guess is too high, try with a lower number")
+    elif guess > number:
+        print("Oo! guess is little bit high , try with a lower number")
 
-    elif guess < number//2:
-        print("Oo! guess is too low, try with a higher number")
+    elif guess < number:
+        print("Oo! guess is little bit low, try with a higher number")
 
-    elif guess > number and guess<number*2:
-        print("Too Close lets try with a lower number")
-
-    elif guess < number and guess >number//2:
-        print("Too Close lets try with a higher number")
-
-print("Bad Luck Buddy! Better Luck in the Next Try")
+if guess_counter == new_allowed:
+    print("Bad Luck Buddy! Better Luck in the Next Try")
