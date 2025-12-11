@@ -30,4 +30,4 @@ while guess_counter < new_allowed:
         print("Oo! guess is little bit low, try with a higher number")
 
 if guess_counter == new_allowed:
-    print("Bad Luck Buddy! Better Luck in the Next Try")
+    print(f"Bad Luck Buddy! Better Luck in the Next Try. The correct number is {number}")
